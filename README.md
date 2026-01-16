@@ -1,29 +1,30 @@
-# Wymagania
+# Crawlee + Playwright – prosty crawler
+
+Projekt przedstawia prosty crawler oparty o **Crawlee** i **Playwright**, który:
+- otwiera wskazaną stronę,
+- czeka na załadowanie elementu,
+- pobiera HTML z konkretnego elementu (`div[data-test="abc"]`),
+- wypisuje jego zawartość w konsoli.
+
+---
+
+## Wymagania
 Node.js >= 18
 
-# KROK 1 - Utworzenie projektu
-npm init -y
+## 📦 Instalacja
 
-# KROK 2 - Konfiguracja projektu
-w package.json dodać:
-{
-  "type": "module",
-  "scripts": {
-    "start": "node src/index.js"
-  }
-}
+1. Sklonuj repozytorium:
+git clone https://github.com/gosia-barlik/Prosty_crawler.git
+cd Prosty_crawler
 
-# KROK 3 - Instalacja zależności
-npm install crawlee playwright
+2. Zainstaluj zależności:
+npm install
+
+3. Zainstaluj przeglądarki Playwrighta:
 npx playwright install
 
-# KROK 4 - Utworzenie index.js
+##  Uruchomienie crawlera
+node src/index.js
 
-crawler/
-├── src/
-│   └── index.js
-├── package.json
-└── package-lock.json
 
-# KROK 5 - Uruchomienie
-npm start
+
