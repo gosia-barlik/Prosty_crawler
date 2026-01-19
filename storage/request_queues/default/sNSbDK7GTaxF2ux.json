@@ -1,0 +1,9 @@
+{
+	"id": "sNSbDK7GTaxF2ux",
+	"json": "{\"id\":\"sNSbDK7GTaxF2ux\",\"url\":\"https://www.pracuj.pl/praca/grafik-graficzka-rzeszow-generala-mariana-langiewicza-18,oferta,1004589147?sug=oferta_bottom_jit_12\",\"loadedUrl\":\"https://www.pracuj.pl/praca/grafik-graficzka-rzeszow-generala-mariana-langiewicza-18,oferta,1004589147?sug=oferta_bottom_jit_12\",\"uniqueKey\":\"https://www.pracuj.pl/praca/grafik-graficzka-rzeszow-generala-mariana-langiewicza-18,oferta,1004589147?sug=oferta_bottom_jit_12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:43.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/grafik-graficzka-rzeszow-generala-mariana-langiewicza-18,oferta,1004589147?sug=oferta_bottom_jit_12",
+	"url": "https://www.pracuj.pl/praca/grafik-graficzka-rzeszow-generala-mariana-langiewicza-18,oferta,1004589147?sug=oferta_bottom_jit_12"
+}

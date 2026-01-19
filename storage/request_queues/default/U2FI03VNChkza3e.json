@@ -1,0 +1,9 @@
+{
+	"id": "U2FI03VNChkza3e",
+	"json": "{\"id\":\"U2FI03VNChkza3e\",\"url\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-rumia,oferta,1004563313?sug=oferta_bottom_jit_18\",\"loadedUrl\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-rumia,oferta,1004563313?sug=oferta_bottom_jit_18\",\"uniqueKey\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-rumia,oferta,1004563313?sug=oferta_bottom_jit_18\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:42:57.112Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-rumia,oferta,1004563313?sug=oferta_bottom_jit_18",
+	"url": "https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-rumia,oferta,1004563313?sug=oferta_bottom_jit_18"
+}

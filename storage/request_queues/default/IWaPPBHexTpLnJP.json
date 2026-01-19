@@ -1,0 +1,9 @@
+{
+	"id": "IWaPPBHexTpLnJP",
+	"json": "{\"id\":\"IWaPPBHexTpLnJP\",\"url\":\"https://www.pracuj.pl/praca/recepcjonista-recepcjonistka-bielany-wroclawskie-pow-wroclawski-szwedzka-7,oferta,1004575581?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"loadedUrl\":\"https://www.pracuj.pl/praca/recepcjonista-recepcjonistka-bielany-wroclawskie-pow-wroclawski-szwedzka-7,oferta,1004575581?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"uniqueKey\":\"https://www.pracuj.pl/praca/recepcjonista-recepcjonistka-bielany-wroclawskie-pow-wroclawski-szwedzka-7,oferta,1004575581?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:37:00.737Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/recepcjonista-recepcjonistka-bielany-wroclawskie-pow-wroclawski-szwedzka-7,oferta,1004575581?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz",
+	"url": "https://www.pracuj.pl/praca/recepcjonista-recepcjonistka-bielany-wroclawskie-pow-wroclawski-szwedzka-7,oferta,1004575581?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "fSoOr1v6ImoYAik",
+	"json": "{\"id\":\"fSoOr1v6ImoYAik\",\"url\":\"https://www.pracuj.pl/praca/specjalista-specjalistka-ds-wsparcia-produkcji-slupsk,oferta,1004592393?s=1f7c2c91&searchId=MTc2ODgzMjgxMzUwMC4wMTM=\",\"loadedUrl\":\"https://www.pracuj.pl/praca/specjalista-specjalistka-ds-wsparcia-produkcji-slupsk,oferta,1004592393?s=1f7c2c91&searchId=MTc2ODgzMjgxMzUwMC4wMTM=\",\"uniqueKey\":\"https://www.pracuj.pl/praca/specjalista-specjalistka-ds-wsparcia-produkcji-slupsk,oferta,1004592393?s=1f7c2c91&searchId=MTc2ODgzMjgxMzUwMC4wMTM%3D\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:29:47.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/specjalista-specjalistka-ds-wsparcia-produkcji-slupsk,oferta,1004592393?s=1f7c2c91&searchId=MTc2ODgzMjgxMzUwMC4wMTM%3D",
+	"url": "https://www.pracuj.pl/praca/specjalista-specjalistka-ds-wsparcia-produkcji-slupsk,oferta,1004592393?s=1f7c2c91&searchId=MTc2ODgzMjgxMzUwMC4wMTM="
+}

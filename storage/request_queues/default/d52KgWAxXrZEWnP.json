@@ -1,0 +1,9 @@
+{
+	"id": "d52KgWAxXrZEWnP",
+	"json": "{\"id\":\"d52KgWAxXrZEWnP\",\"url\":\"https://www.pracuj.pl/praca/asystent-asystentka-ds-sprzedazy-lodz,oferta,1004592437?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"loadedUrl\":\"https://www.pracuj.pl/praca/asystent-asystentka-ds-sprzedazy-lodz,oferta,1004592437?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"uniqueKey\":\"https://www.pracuj.pl/praca/asystent-asystentka-ds-sprzedazy-lodz,oferta,1004592437?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:37:29.964Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/asystent-asystentka-ds-sprzedazy-lodz,oferta,1004592437?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2",
+	"url": "https://www.pracuj.pl/praca/asystent-asystentka-ds-sprzedazy-lodz,oferta,1004592437?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2"
+}

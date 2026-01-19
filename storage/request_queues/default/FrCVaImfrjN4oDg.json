@@ -1,0 +1,9 @@
+{
+	"id": "FrCVaImfrjN4oDg",
+	"json": "{\"id\":\"FrCVaImfrjN4oDg\",\"url\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-slawkow-fabryczna-28,oferta,1004570798?sug=oferta_bottom_bd_16\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-slawkow-fabryczna-28,oferta,1004570798?sug=oferta_bottom_bd_16\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-slawkow-fabryczna-28,oferta,1004570798?sug=oferta_bottom_bd_16\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:52.454Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-ciezarowki-slawkow-fabryczna-28,oferta,1004570798?sug=oferta_bottom_bd_16",
+	"url": "https://www.pracuj.pl/praca/kierowca-ciezarowki-slawkow-fabryczna-28,oferta,1004570798?sug=oferta_bottom_bd_16"
+}

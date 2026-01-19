@@ -1,0 +1,9 @@
+{
+	"id": "8o3MY6lHmTCI2OO",
+	"json": "{\"id\":\"8o3MY6lHmTCI2OO\",\"url\":\"https://www.pracuj.pl/praca/kierowca-transportu-zywca-kat-c%2be-korsze,oferta,1004568782?sug=oferta_bottom_bd_14\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-transportu-zywca-kat-c%2be-korsze,oferta,1004568782?sug=oferta_bottom_bd_14\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-transportu-zywca-kat-c%2be-korsze,oferta,1004568782?sug=oferta_bottom_bd_14\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:47.772Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-transportu-zywca-kat-c%2be-korsze,oferta,1004568782?sug=oferta_bottom_bd_14",
+	"url": "https://www.pracuj.pl/praca/kierowca-transportu-zywca-kat-c%2be-korsze,oferta,1004568782?sug=oferta_bottom_bd_14"
+}

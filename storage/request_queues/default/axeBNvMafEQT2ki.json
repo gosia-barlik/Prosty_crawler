@@ -1,0 +1,9 @@
+{
+	"id": "axeBNvMafEQT2ki",
+	"json": "{\"id\":\"axeBNvMafEQT2ki\",\"url\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-minsk-mazowiecki,oferta,1004572462?sug=oferta_bottom_bd_12\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-minsk-mazowiecki,oferta,1004572462?sug=oferta_bottom_bd_12\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-ciezarowki-minsk-mazowiecki,oferta,1004572462?sug=oferta_bottom_bd_12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:43.007Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-ciezarowki-minsk-mazowiecki,oferta,1004572462?sug=oferta_bottom_bd_12",
+	"url": "https://www.pracuj.pl/praca/kierowca-ciezarowki-minsk-mazowiecki,oferta,1004572462?sug=oferta_bottom_bd_12"
+}

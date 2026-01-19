@@ -1,0 +1,9 @@
+{
+	"id": "szREzxNNgxTHHe8",
+	"json": "{\"id\":\"szREzxNNgxTHHe8\",\"url\":\"https://www.pracuj.pl/praca/praca%20fizyczna;cc,5022/utrzymanie%20czysto%c5%9bci;cc,5022015\",\"loadedUrl\":\"https://www.pracuj.pl/praca/praca%20fizyczna;cc,5022/utrzymanie%20czysto%C5%9Bci;cc,5022015\",\"uniqueKey\":\"https://www.pracuj.pl/praca/praca%20fizyczna;cc,5022/utrzymanie%20czysto%c5%9bci;cc,5022015\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:40:48.262Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/praca%20fizyczna;cc,5022/utrzymanie%20czysto%c5%9bci;cc,5022015",
+	"url": "https://www.pracuj.pl/praca/praca%20fizyczna;cc,5022/utrzymanie%20czysto%c5%9bci;cc,5022015"
+}

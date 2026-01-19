@@ -1,0 +1,9 @@
+{
+	"id": "ygM4iQEffAfjW7d",
+	"json": "{\"id\":\"ygM4iQEffAfjW7d\",\"url\":\"https://www.pracuj.pl/praca/customer-finance-assistant-with-slovenian-krakow-aleja-pokoju-18e,oferta,1004561977?sug=oferta_bottom_jit_4\",\"loadedUrl\":\"https://www.pracuj.pl/praca/customer-finance-assistant-with-slovenian-krakow-aleja-pokoju-18e,oferta,1004561977?sug=oferta_bottom_jit_4\",\"uniqueKey\":\"https://www.pracuj.pl/praca/customer-finance-assistant-with-slovenian-krakow-aleja-pokoju-18e,oferta,1004561977?sug=oferta_bottom_jit_4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: Request blocked - received 403 status code.\\n    at PlaywrightCrawler._throwOnBlockedRequest (C:\\\\Aplikacje\\\\crawler\\\\node_modules\\\\@crawlee\\\\basic\\\\internals\\\\basic-crawler.js:903:19)\\n    at PlaywrightCrawler._responseHandler (C:\\\\Aplikacje\\\\crawler\\\\node_modules\\\\@crawlee\\\\browser\\\\internals\\\\browser-crawler.js:383:22)\\n    at PlaywrightCrawler._runRequestHandler (C:\\\\Aplikacje\\\\crawler\\\\node_modules\\\\@crawlee\\\\browser\\\\internals\\\\browser-crawler.js:262:24)\\n    at async PlaywrightCrawler._runRequestHandler (C:\\\\Aplikacje\\\\crawler\\\\node_modules\\\\@crawlee\\\\playwright\\\\internals\\\\playwright-crawler.js:114:9)\\n    at async wrap (C:\\\\Aplikacje\\\\crawler\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:20.285Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://www.pracuj.pl/praca/customer-finance-assistant-with-slovenian-krakow-aleja-pokoju-18e,oferta,1004561977?sug=oferta_bottom_jit_4",
+	"url": "https://www.pracuj.pl/praca/customer-finance-assistant-with-slovenian-krakow-aleja-pokoju-18e,oferta,1004561977?sug=oferta_bottom_jit_4"
+}

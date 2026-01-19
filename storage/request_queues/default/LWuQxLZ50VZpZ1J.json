@@ -1,0 +1,9 @@
+{
+	"id": "LWuQxLZ50VZpZ1J",
+	"json": "{\"id\":\"LWuQxLZ50VZpZ1J\",\"url\":\"https://www.pracuj.pl/praca\",\"loadedUrl\":\"https://www.pracuj.pl/praca\",\"uniqueKey\":\"https://www.pracuj.pl/praca\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-19T14:26:50.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca",
+	"url": "https://www.pracuj.pl/praca"
+}

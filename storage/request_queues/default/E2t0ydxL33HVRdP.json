@@ -1,0 +1,9 @@
+{
+	"id": "E2t0ydxL33HVRdP",
+	"json": "{\"id\":\"E2t0ydxL33HVRdP\",\"url\":\"https://www.pracuj.pl/praca/mlodszy-specjalista-mlodsza-specjalistka-ds-handlowych-poznan,oferta,1004570938?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"loadedUrl\":\"https://www.pracuj.pl/praca/mlodszy-specjalista-mlodsza-specjalistka-ds-handlowych-poznan,oferta,1004570938?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"uniqueKey\":\"https://www.pracuj.pl/praca/mlodszy-specjalista-mlodsza-specjalistka-ds-handlowych-poznan,oferta,1004570938?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:28:18.640Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/mlodszy-specjalista-mlodsza-specjalistka-ds-handlowych-poznan,oferta,1004570938?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1",
+	"url": "https://www.pracuj.pl/praca/mlodszy-specjalista-mlodsza-specjalistka-ds-handlowych-poznan,oferta,1004570938?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1"
+}

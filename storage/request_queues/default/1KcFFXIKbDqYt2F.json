@@ -1,0 +1,9 @@
+{
+	"id": "1KcFFXIKbDqYt2F",
+	"json": "{\"id\":\"1KcFFXIKbDqYt2F\",\"url\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-chelm,oferta,1004587629?sug=oferta_bottom_jit_2\",\"loadedUrl\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-chelm,oferta,1004587629?sug=oferta_bottom_jit_2\",\"uniqueKey\":\"https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-chelm,oferta,1004587629?sug=oferta_bottom_jit_2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:40:56.962Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-chelm,oferta,1004587629?sug=oferta_bottom_jit_2",
+	"url": "https://www.pracuj.pl/praca/opiekun-opiekunka-osob-starszych-chelm,oferta,1004587629?sug=oferta_bottom_jit_2"
+}

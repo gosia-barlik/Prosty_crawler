@@ -1,0 +1,71 @@
+{
+  "requestsFinished": 452,
+  "requestsFailed": 45,
+  "requestsRetries": 261,
+  "requestsFailedPerMinute": 2,
+  "requestsFinishedPerMinute": 21,
+  "requestMinDurationMillis": 2360,
+  "requestMaxDurationMillis": 12472,
+  "requestTotalFailedDurationMillis": 268293,
+  "requestTotalFinishedDurationMillis": 1759750,
+  "crawlerStartedAt": "2026-01-19T14:26:45.263Z",
+  "crawlerFinishedAt": "2026-01-19T14:48:09.063Z",
+  "statsPersistedAt": "2026-01-19T14:48:09.063Z",
+  "crawlerRuntimeMillis": 1283996,
+  "crawlerLastStartTimestamp": 1768832805067,
+  "requestRetryHistogram": [
+    236,
+    128,
+    62,
+    71
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 5962,
+  "requestAvgFinishedDurationMillis": 3893,
+  "requestTotalDurationMillis": 2028043,
+  "requestsTotal": 497,
+  "requestsWithStatusCode": {
+    "200": 501,
+    "403": 461
+  },
+  "errors": {
+    "C:\\Aplikacje\\crawler\\node_modules\\@crawlee\\basic\\internals\\basic-crawler.js:903:19": {
+      "missing error code": {
+        "Error": {
+          "Request blocked - received 403 status code.": {
+            "count": 38
+          }
+        }
+      }
+    },
+    "C:\\Aplikacje\\crawler\\src\\index.js:17:16": {
+      "missing error code": {
+        "TimeoutError": {
+          "page.waitForLoadState: Timeout 30000ms exceeded.": {
+            "count": 7
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "C:\\Aplikacje\\crawler\\node_modules\\@crawlee\\basic\\internals\\basic-crawler.js:903:19": {
+      "missing error code": {
+        "Error": {
+          "Request blocked - received 403 status code.": {
+            "count": 423
+          }
+        }
+      }
+    },
+    "C:\\Aplikacje\\crawler\\src\\index.js:17:16": {
+      "missing error code": {
+        "TimeoutError": {
+          "page.waitForLoadState: Timeout 30000ms exceeded.": {
+            "count": 42
+          }
+        }
+      }
+    }
+  }
+}

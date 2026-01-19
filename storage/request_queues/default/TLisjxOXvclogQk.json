@@ -1,0 +1,9 @@
+{
+	"id": "TLisjxOXvclogQk",
+	"json": "{\"id\":\"TLisjxOXvclogQk\",\"url\":\"https://www.pracuj.pl/aplikuj/inzynier-inzynierka-budowy-rzeszow,oferta,1004582169?apid=629acc53-ef43-473a-994b-ea45a4a51fe7&oca=CouldNotUse&acv=0\",\"loadedUrl\":\"https://login.pracuj.pl/?apid=629acc53-ef43-473a-994b-ea45a4a51fe7&oca=CouldNotUse&acv=0&oid=1004582169\",\"uniqueKey\":\"https://www.pracuj.pl/aplikuj/inzynier-inzynierka-budowy-rzeszow,oferta,1004582169?acv=0&apid=629acc53-ef43-473a-994b-ea45a4a51fe7&oca=CouldNotUse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:40:42.580Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/aplikuj/inzynier-inzynierka-budowy-rzeszow,oferta,1004582169?acv=0&apid=629acc53-ef43-473a-994b-ea45a4a51fe7&oca=CouldNotUse",
+	"url": "https://www.pracuj.pl/aplikuj/inzynier-inzynierka-budowy-rzeszow,oferta,1004582169?apid=629acc53-ef43-473a-994b-ea45a4a51fe7&oca=CouldNotUse&acv=0"
+}

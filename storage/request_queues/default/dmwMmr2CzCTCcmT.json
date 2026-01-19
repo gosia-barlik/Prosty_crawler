@@ -1,0 +1,9 @@
+{
+	"id": "dmwMmr2CzCTCcmT",
+	"json": "{\"id\":\"dmwMmr2CzCTCcmT\",\"url\":\"https://www.pracuj.pl/aplikuj/grafik-graficzka-w-dziale-marketingu-tychy-browarowa-21,oferta,1004592465?apid=f99627d1-4d2e-49f9-9740-e14b7e00f557&oca=CouldNotUse&acv=0\",\"loadedUrl\":\"https://login.pracuj.pl/?apid=f99627d1-4d2e-49f9-9740-e14b7e00f557&oca=CouldNotUse&acv=0&oid=1004592465\",\"uniqueKey\":\"https://www.pracuj.pl/aplikuj/grafik-graficzka-w-dziale-marketingu-tychy-browarowa-21,oferta,1004592465?acv=0&apid=f99627d1-4d2e-49f9-9740-e14b7e00f557&oca=CouldNotUse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:44:16.216Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/aplikuj/grafik-graficzka-w-dziale-marketingu-tychy-browarowa-21,oferta,1004592465?acv=0&apid=f99627d1-4d2e-49f9-9740-e14b7e00f557&oca=CouldNotUse",
+	"url": "https://www.pracuj.pl/aplikuj/grafik-graficzka-w-dziale-marketingu-tychy-browarowa-21,oferta,1004592465?apid=f99627d1-4d2e-49f9-9740-e14b7e00f557&oca=CouldNotUse&acv=0"
+}

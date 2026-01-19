@@ -1,0 +1,9 @@
+{
+	"id": "YahgwSaE0im3JsI",
+	"json": "{\"id\":\"YahgwSaE0im3JsI\",\"url\":\"https://www.pracuj.pl/praca/osoba-do-prac-administracyjno-biurowych-warszawa,oferta,1004578283?sug=oferta_bottom_bd_22\",\"loadedUrl\":\"https://www.pracuj.pl/praca/osoba-do-prac-administracyjno-biurowych-warszawa,oferta,1004578283?sug=oferta_bottom_bd_22\",\"uniqueKey\":\"https://www.pracuj.pl/praca/osoba-do-prac-administracyjno-biurowych-warszawa,oferta,1004578283?sug=oferta_bottom_bd_22\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:44:03.867Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/osoba-do-prac-administracyjno-biurowych-warszawa,oferta,1004578283?sug=oferta_bottom_bd_22",
+	"url": "https://www.pracuj.pl/praca/osoba-do-prac-administracyjno-biurowych-warszawa,oferta,1004578283?sug=oferta_bottom_bd_22"
+}

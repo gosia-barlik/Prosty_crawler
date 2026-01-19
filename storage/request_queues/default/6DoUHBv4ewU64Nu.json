@@ -1,0 +1,9 @@
+{
+	"id": "6DoUHBv4ewU64Nu",
+	"json": "{\"id\":\"6DoUHBv4ewU64Nu\",\"url\":\"https://www.pracuj.pl/praca/business-analyst-f-m-d-warszawa-inflancka-4a,oferta,1004581979?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"loadedUrl\":\"https://www.pracuj.pl/praca/business-analyst-f-m-d-warszawa-inflancka-4a,oferta,1004581979?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"uniqueKey\":\"https://www.pracuj.pl/praca/business-analyst-f-m-d-warszawa-inflancka-4a,oferta,1004581979?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:33:22.160Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/business-analyst-f-m-d-warszawa-inflancka-4a,oferta,1004581979?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz",
+	"url": "https://www.pracuj.pl/praca/business-analyst-f-m-d-warszawa-inflancka-4a,oferta,1004581979?s=1f7c2c91&searchId=MTc2ODgzMjgxODk3MC4yOTEz"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "HdGOQ5sjNfOgRGZ",
+	"json": "{\"id\":\"HdGOQ5sjNfOgRGZ\",\"url\":\"https://www.pracuj.pl/praca/osoba-do-pracy-w-magazynie-czeladz,oferta,1004570890?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"loadedUrl\":\"https://www.pracuj.pl/praca/osoba-do-pracy-w-magazynie-czeladz,oferta,1004570890?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"uniqueKey\":\"https://www.pracuj.pl/praca/osoba-do-pracy-w-magazynie-czeladz,oferta,1004570890?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:38:57.810Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/osoba-do-pracy-w-magazynie-czeladz,oferta,1004570890?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2",
+	"url": "https://www.pracuj.pl/praca/osoba-do-pracy-w-magazynie-czeladz,oferta,1004570890?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2"
+}

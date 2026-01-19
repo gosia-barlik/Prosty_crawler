@@ -1,0 +1,9 @@
+{
+	"id": "emkxP70rqH6Szmq",
+	"json": "{\"id\":\"emkxP70rqH6Szmq\",\"url\":\"https://www.pracuj.pl/praca/kierowca-miedzynarodowy-kat-c%2be-chorzow,oferta,1004571596?sug=oferta_bottom_bd_18\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-miedzynarodowy-kat-c%2be-chorzow,oferta,1004571596?sug=oferta_bottom_bd_18\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-miedzynarodowy-kat-c%2be-chorzow,oferta,1004571596?sug=oferta_bottom_bd_18\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:47:14.105Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-miedzynarodowy-kat-c%2be-chorzow,oferta,1004571596?sug=oferta_bottom_bd_18",
+	"url": "https://www.pracuj.pl/praca/kierowca-miedzynarodowy-kat-c%2be-chorzow,oferta,1004571596?sug=oferta_bottom_bd_18"
+}
