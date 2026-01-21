@@ -1,9 +1,0 @@
-{
-	"id": "HBcNh0Qmok38fdB",
-	"json": "{\"id\":\"HBcNh0Qmok38fdB\",\"url\":\"https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021/it%20telekomunikacja;cc,5021005#search\",\"loadedUrl\":\"https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021/it%20telekomunikacja;cc,5021005#search\",\"uniqueKey\":\"https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021/it%20telekomunikacja;cc,5021005\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:47:45.582Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021/it%20telekomunikacja;cc,5021005",
-	"url": "https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021/it%20telekomunikacja;cc,5021005#search"
-}

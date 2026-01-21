@@ -1,9 +1,0 @@
-{
-	"id": "0pS7dWUIc89kmpW",
-	"json": "{\"id\":\"0pS7dWUIc89kmpW\",\"url\":\"https://www.pracuj.pl/praca/technical-support-agent-with-slovenian-english-krakow-opolska-112,oferta,1004572971?sug=oferta_bottom_jit_6\",\"loadedUrl\":\"https://www.pracuj.pl/praca/technical-support-agent-with-slovenian-english-krakow-opolska-112,oferta,1004572971?sug=oferta_bottom_jit_6\",\"uniqueKey\":\"https://www.pracuj.pl/praca/technical-support-agent-with-slovenian-english-krakow-opolska-112,oferta,1004572971?sug=oferta_bottom_jit_6\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:46:10.825Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/technical-support-agent-with-slovenian-english-krakow-opolska-112,oferta,1004572971?sug=oferta_bottom_jit_6",
-	"url": "https://www.pracuj.pl/praca/technical-support-agent-with-slovenian-english-krakow-opolska-112,oferta,1004572971?sug=oferta_bottom_jit_6"
-}

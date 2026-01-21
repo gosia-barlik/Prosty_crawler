@@ -1,9 +1,0 @@
-{
-	"id": "pnRyEazCa4Gh1Mf",
-	"json": "{\"id\":\"pnRyEazCa4Gh1Mf\",\"url\":\"https://www.pracuj.pl/aplikuj/kierowca-kat-c-k-m-krapkowice-jana-kilinskiego-1,oferta,1004570917?apid=d26d61fd-64a8-4fc6-8d89-cb8d9a9eee3a&oca=CouldNotUse&acv=0\",\"loadedUrl\":\"https://login.pracuj.pl/?apid=d26d61fd-64a8-4fc6-8d89-cb8d9a9eee3a&oca=CouldNotUse&acv=0&oid=1004570917\",\"uniqueKey\":\"https://www.pracuj.pl/aplikuj/kierowca-kat-c-k-m-krapkowice-jana-kilinskiego-1,oferta,1004570917?acv=0&apid=d26d61fd-64a8-4fc6-8d89-cb8d9a9eee3a&oca=CouldNotUse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:44:21.964Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/aplikuj/kierowca-kat-c-k-m-krapkowice-jana-kilinskiego-1,oferta,1004570917?acv=0&apid=d26d61fd-64a8-4fc6-8d89-cb8d9a9eee3a&oca=CouldNotUse",
-	"url": "https://www.pracuj.pl/aplikuj/kierowca-kat-c-k-m-krapkowice-jana-kilinskiego-1,oferta,1004570917?apid=d26d61fd-64a8-4fc6-8d89-cb8d9a9eee3a&oca=CouldNotUse&acv=0"
-}

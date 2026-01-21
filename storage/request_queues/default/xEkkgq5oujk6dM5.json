@@ -1,9 +1,0 @@
-{
-	"id": "xEkkgq5oujk6dM5",
-	"json": "{\"id\":\"xEkkgq5oujk6dM5\",\"url\":\"https://www.pracuj.pl/praca?pn=6\",\"loadedUrl\":\"https://www.pracuj.pl/praca?pn=6\",\"uniqueKey\":\"https://www.pracuj.pl/praca?pn=6\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-19T14:26:55.756Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca?pn=6",
-	"url": "https://www.pracuj.pl/praca?pn=6"
-}

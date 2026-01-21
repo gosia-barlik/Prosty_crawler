@@ -1,9 +1,0 @@
-{
-	"id": "bWRucApb1Vk0TUY",
-	"json": "{\"id\":\"bWRucApb1Vk0TUY\",\"url\":\"https://www.pracuj.pl/praca/pracownik-biurowy-pracowniczka-biurowa-warszawa,oferta,1004546130?sug=oferta_bottom_bd_17\",\"loadedUrl\":\"https://www.pracuj.pl/praca/pracownik-biurowy-pracowniczka-biurowa-warszawa,oferta,1004546130?sug=oferta_bottom_bd_17\",\"uniqueKey\":\"https://www.pracuj.pl/praca/pracownik-biurowy-pracowniczka-biurowa-warszawa,oferta,1004546130?sug=oferta_bottom_bd_17\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:43:59.355Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/pracownik-biurowy-pracowniczka-biurowa-warszawa,oferta,1004546130?sug=oferta_bottom_bd_17",
-	"url": "https://www.pracuj.pl/praca/pracownik-biurowy-pracowniczka-biurowa-warszawa,oferta,1004546130?sug=oferta_bottom_bd_17"
-}

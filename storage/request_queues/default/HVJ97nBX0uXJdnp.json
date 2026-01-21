@@ -1,9 +1,0 @@
-{
-	"id": "HVJ97nBX0uXJdnp",
-	"json": "{\"id\":\"HVJ97nBX0uXJdnp\",\"url\":\"https://www.pracuj.pl/aplikuj/customer-care-specialist-with-slovak-krakow-aleja-pokoju-18e,oferta,1004592464?apid=c194cbfe-d665-43f7-8d27-d4076ba0b0cf&oca=None&acv=0\",\"loadedUrl\":\"https://login.pracuj.pl/?apid=c194cbfe-d665-43f7-8d27-d4076ba0b0cf&oca=None&acv=0&oid=1004592464\",\"uniqueKey\":\"https://www.pracuj.pl/aplikuj/customer-care-specialist-with-slovak-krakow-aleja-pokoju-18e,oferta,1004592464?acv=0&apid=c194cbfe-d665-43f7-8d27-d4076ba0b0cf&oca=None\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:44:21.955Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/aplikuj/customer-care-specialist-with-slovak-krakow-aleja-pokoju-18e,oferta,1004592464?acv=0&apid=c194cbfe-d665-43f7-8d27-d4076ba0b0cf&oca=None",
-	"url": "https://www.pracuj.pl/aplikuj/customer-care-specialist-with-slovak-krakow-aleja-pokoju-18e,oferta,1004592464?apid=c194cbfe-d665-43f7-8d27-d4076ba0b0cf&oca=None&acv=0"
-}

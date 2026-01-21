@@ -1,9 +1,0 @@
-{
-	"id": "WbxzyvYGjo76InB",
-	"json": "{\"id\":\"WbxzyvYGjo76InB\",\"url\":\"https://www.pracuj.pl/praca/inzynier-inzynierka-budowy-rzeszow,oferta,1004575793?sug=oferta_bottom_bd_1\",\"loadedUrl\":\"https://www.pracuj.pl/praca/inzynier-inzynierka-budowy-rzeszow,oferta,1004575793?sug=oferta_bottom_bd_1\",\"uniqueKey\":\"https://www.pracuj.pl/praca/inzynier-inzynierka-budowy-rzeszow,oferta,1004575793?sug=oferta_bottom_bd_1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:40:56.902Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/inzynier-inzynierka-budowy-rzeszow,oferta,1004575793?sug=oferta_bottom_bd_1",
-	"url": "https://www.pracuj.pl/praca/inzynier-inzynierka-budowy-rzeszow,oferta,1004575793?sug=oferta_bottom_bd_1"
-}

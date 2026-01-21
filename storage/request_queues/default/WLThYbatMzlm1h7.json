@@ -1,9 +1,0 @@
-{
-	"id": "WLThYbatMzlm1h7",
-	"json": "{\"id\":\"WLThYbatMzlm1h7\",\"url\":\"https://www.pracuj.pl/praca/osoba-do-obslugi-klienta-i-dostarczania-potraw-zukowo,oferta,1004548026?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"loadedUrl\":\"https://www.pracuj.pl/praca/osoba-do-obslugi-klienta-i-dostarczania-potraw-zukowo,oferta,1004548026?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"uniqueKey\":\"https://www.pracuj.pl/praca/osoba-do-obslugi-klienta-i-dostarczania-potraw-zukowo,oferta,1004548026?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:39:38.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/osoba-do-obslugi-klienta-i-dostarczania-potraw-zukowo,oferta,1004548026?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2",
-	"url": "https://www.pracuj.pl/praca/osoba-do-obslugi-klienta-i-dostarczania-potraw-zukowo,oferta,1004548026?s=1f7c2c91&searchId=MTc2ODgzMjgxODgxMS44NjA2"
-}

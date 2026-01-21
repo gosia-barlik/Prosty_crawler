@@ -1,9 +1,0 @@
-{
-	"id": "aGYzp4C0g7Fz01D",
-	"json": "{\"id\":\"aGYzp4C0g7Fz01D\",\"url\":\"https://www.pracuj.pl/praca/kurier-kierowca-w-firmie-kurierskiej-opole,oferta,1004570878?s=1f7c2c91&searchId=MTc2ODgzMjgxODc5Ny43MTU4\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kurier-kierowca-w-firmie-kurierskiej-opole,oferta,1004570878?s=1f7c2c91&searchId=MTc2ODgzMjgxODc5Ny43MTU4\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kurier-kierowca-w-firmie-kurierskiej-opole,oferta,1004570878?s=1f7c2c91&searchId=MTc2ODgzMjgxODc5Ny43MTU4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:38:00.453Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/kurier-kierowca-w-firmie-kurierskiej-opole,oferta,1004570878?s=1f7c2c91&searchId=MTc2ODgzMjgxODc5Ny43MTU4",
-	"url": "https://www.pracuj.pl/praca/kurier-kierowca-w-firmie-kurierskiej-opole,oferta,1004570878?s=1f7c2c91&searchId=MTc2ODgzMjgxODc5Ny43MTU4"
-}

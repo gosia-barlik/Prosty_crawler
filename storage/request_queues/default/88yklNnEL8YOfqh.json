@@ -1,9 +1,0 @@
-{
-	"id": "88yklNnEL8YOfqh",
-	"json": "{\"id\":\"88yklNnEL8YOfqh\",\"url\":\"https://www.pracuj.pl/praca/kierowca-kat-c%2be-olesnica,oferta,1004549841?sug=oferta_bottom_bd_22\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-kat-c%2be-olesnica,oferta,1004549841?sug=oferta_bottom_bd_22\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-kat-c%2be-olesnica,oferta,1004549841?sug=oferta_bottom_bd_22\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:47:26.487Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-kat-c%2be-olesnica,oferta,1004549841?sug=oferta_bottom_bd_22",
-	"url": "https://www.pracuj.pl/praca/kierowca-kat-c%2be-olesnica,oferta,1004549841?sug=oferta_bottom_bd_22"
-}

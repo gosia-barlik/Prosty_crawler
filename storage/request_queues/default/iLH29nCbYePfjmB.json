@@ -1,9 +1,0 @@
-{
-	"id": "iLH29nCbYePfjmB",
-	"json": "{\"id\":\"iLH29nCbYePfjmB\",\"url\":\"https://www.pracuj.pl/praca/obs%c5%82uga%20klienta;cc,5021\",\"loadedUrl\":\"https://www.pracuj.pl/praca/obs%C5%82uga%20klienta;cc,5021\",\"uniqueKey\":\"https://www.pracuj.pl/praca/obs%c5%82uga%20klienta;cc,5021\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:44:44.659Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/obs%c5%82uga%20klienta;cc,5021",
-	"url": "https://www.pracuj.pl/praca/obs%c5%82uga%20klienta;cc,5021"
-}

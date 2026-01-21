@@ -2,7 +2,7 @@
 node_modules/
 
 # Crawlee storage (requests, datasets, key-value stores)
-# storage/
+storage/
 
 # Playwright
 playwright-report/

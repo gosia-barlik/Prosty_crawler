@@ -1,9 +1,0 @@
-{
-	"id": "aaBBMgRIqR4VWjv",
-	"json": "{\"id\":\"aaBBMgRIqR4VWjv\",\"url\":\"https://www.pracuj.pl/praca/rzeszow;wp\",\"loadedUrl\":\"https://www.pracuj.pl/praca/rzeszow;wp\",\"uniqueKey\":\"https://www.pracuj.pl/praca/rzeszow;wp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:40:48.675Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/rzeszow;wp",
-	"url": "https://www.pracuj.pl/praca/rzeszow;wp"
-}

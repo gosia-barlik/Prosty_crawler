@@ -1,9 +1,0 @@
-{
-	"id": "BUHUiQGLCD0QeFW",
-	"json": "{\"id\":\"BUHUiQGLCD0QeFW\",\"url\":\"https://www.pracuj.pl/praca/kierowca-c%2be-m-k-opole,oferta,1004523279?sug=oferta_bottom_bd_19\",\"loadedUrl\":\"https://www.pracuj.pl/praca/kierowca-c%2be-m-k-opole,oferta,1004523279?sug=oferta_bottom_bd_19\",\"uniqueKey\":\"https://www.pracuj.pl/praca/kierowca-c%2be-m-k-opole,oferta,1004523279?sug=oferta_bottom_bd_19\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:47:17.995Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/kierowca-c%2be-m-k-opole,oferta,1004523279?sug=oferta_bottom_bd_19",
-	"url": "https://www.pracuj.pl/praca/kierowca-c%2be-m-k-opole,oferta,1004523279?sug=oferta_bottom_bd_19"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "d9erh0JCosH1Hyk",
-	"json": "{\"id\":\"d9erh0JCosH1Hyk\",\"url\":\"https://www.pracuj.pl/praca/konsultant-sprzedawca-wroclavia-m-k-wroclaw-sucha-1,oferta,1004548037?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"loadedUrl\":\"https://www.pracuj.pl/praca/konsultant-sprzedawca-wroclavia-m-k-wroclaw-sucha-1,oferta,1004548037?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"uniqueKey\":\"https://www.pracuj.pl/praca/konsultant-sprzedawca-wroclavia-m-k-wroclaw-sucha-1,oferta,1004548037?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-01-19T14:27:59.837Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.pracuj.pl/praca/konsultant-sprzedawca-wroclavia-m-k-wroclaw-sucha-1,oferta,1004548037?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1",
-	"url": "https://www.pracuj.pl/praca/konsultant-sprzedawca-wroclavia-m-k-wroclaw-sucha-1,oferta,1004548037?s=1f7c2c91&searchId=MTc2ODgzMjgwODA5Ni4zOTQ1"
-}
