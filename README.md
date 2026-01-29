@@ -15,8 +15,9 @@ Repozytorium ma charakter edukacyjny i porównawczy — pozwala szybko sprawdzi�
 * [Struktura projektu](#struktura-projektu)
 * [Rozwiązania](#rozwiązania)
 
-  * [Crawler HTML (Crawlee + Playwright)](#1-crawler-html-crawlee--playwright)
-  * [Crawler API (Node.js)](#2-crawler-api-nodejs)
+  * [Crawler HTML - zapis HTML (Crawlee + Playwright)](#1-crawler-html-zapis-html)
+  * [Crawler HTML - zapis innerText (Crawlee + Playwright)](#2-crawler-html-zapis-innerText)
+  * [Crawler API (Node.js)](#3-crawler-api-nodejs)
 * [Jak uruchomić](#jak-uruchomić)
 * [Porównanie podejść](#porównanie-podejść)
 
@@ -35,51 +36,64 @@ Repozytorium ma charakter edukacyjny i porównawczy — pozwala szybko sprawdzi�
 
 ```
 .
-├── index.js        # Crawler HTML (Crawlee + Playwright)
-├── api-test.js     # Crawlowanie danych z API
+├── getHtml.js        # Crawler HTML zapisujący pełny HTML
+├── getInnerText.js   # Crawler HTML zapisujący innerText
+├── api-test.js       # Crawlowanie danych z API
 ├── package.json
 └── README.md
+
 ```
 
 ---
 
 ## Rozwiązania
 
-### 1. Crawler HTML (Crawlee + Playwright)
+### 1. Crawler HTML – zapis HTML
 
-**Plik:** `index.js`
+**Plik** : `getHtml.js`
 
-Rozwiązanie oparte o **Crawlee** i **Playwright**, uruchamiane w kontekście przeglądarki.
+Crawler oparty o Crawlee i Playwright, uruchamiany w kontekście przeglądarki.
 
-Crawler:
+Działanie skryptu:
 
-* otwiera wskazaną stronę WWW,
-* czeka na załadowanie konkretnego elementu DOM,
-* pobiera HTML z wybranego elementu (`div[data-test="abc"]`),
-* wypisuje zawartość elementu w konsoli.
+uruchamia crawler na wskazanej stronie archiwum,
 
-**Kiedy używać:**
+wyszukuje linki znajdujące się w div.offers,
 
-* dane są renderowane dynamicznie (SPA),
-* brak publicznego API,
-* wymagane jest czekanie na elementy lub interakcja z DOM.
+otwiera każdą znalezioną podstronę,
 
----
+odczytuje zawartość elementu div#offer-details,
 
-### 2. Crawler API (Node.js)
-
-**Plik:** `api-test.js`
-
-Rozwiązanie wykorzystujące **bezpośrednie zapytanie HTTP** do endpointu API, bez uruchamiania przeglądarki.
-
-Wymaga znajomości URL API
+zapisuje pełny HTML tego elementu.
 
 
-**Kiedy używać:**
+### 2. Crawler HTML – zapis innerText
 
-* dostępne jest publiczne lub nieautoryzowane API,
-* zależy nam na szybkości i prostocie,
-* nie ma potrzeby renderowania HTML.
+**Plik** : `getInnerText.js`
+
+Crawler działa analogicznie do getHtml.js, ale różni się sposobem zapisu danych.
+
+Działanie skryptu:
+
+uruchamia crawler na stronie archiwum,
+
+zbiera linki z div.offers,
+
+otwiera podstrony ofert,
+
+odczytuje zawartość div#offer-details,
+
+zapisuje wyłącznie tekst (innerText) bez HTML.
+
+
+### 3. Crawler API (Node.js)
+
+**Plik:**  `api-test.js`
+
+Rozwiązanie wykorzystujące bezpośrednie zapytanie HTTP do endpointu API, bez uruchamiania przeglądarki.
+
+Wymaga znajomości URL API.
+
 
 ---
 
@@ -90,24 +104,28 @@ Wymaga znajomości URL API
 ```bash
 npm install
 ```
-1a. Opcjonalnie zainstaluj przeglądarki Playwrighta: 
+2. Zainstaluj przeglądarki Playwrighta: 
 
 ```bash
 npx playwright install
 ```
 
-2. Uruchom crawler HTML:
+3. Uruchom crawler zapisujący HTML:
 
 ```bash
-node index.js
+node getHtml.js
 ```
 
-3. Uruchom crawler API:
+4. Uruchom crawler zapisujący innerText:
 
+```bash
+node getInnerText.js
+```
+
+5. Uruchom crawler API:
 ```bash
 node api-test.js
 ```
-
 ---
 
 ## Porównanie podejść
