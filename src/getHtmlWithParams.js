@@ -6,7 +6,7 @@ import path from "path";
 
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
-// ====== LoGGER ======
+// ====== LOGGER ======
 const LOG_FILE = "./htmlWithParams.log";
 
 function log(message) {
@@ -17,12 +17,25 @@ function log(message) {
 }
 
 // ====== PARAMETRY Z CLI ======
-const [, , year, month] = process.argv;
+const [, , year, month, pageNumber] = process.argv;
 log(`START crawlera: year=${year}, month=${month}`);
 if (!year || !month) {
-  log(`Użycie: node getHtmlWithParams.js <year> <month>`);
+  log(`Użycie: node getHtmlWithParams.js <year> <month> [pageNumber]`);
   process.exit(1);
 }
+const singlePageMode = pageNumber !== undefined;
+const startPage = singlePageMode ? Number(pageNumber) : 1;
+
+if (Number.isNaN(startPage) || startPage < 1) {
+  log("pageNumber musi być liczbą >= 1");
+  process.exit(1);
+}
+
+log(
+  singlePageMode
+    ? `START crawlera: year=${year}, month=${month}, ONLY page=${startPage}`
+    : `START crawlera: year=${year}, month=${month}, AUTO pages`,
+);
 
 // ====== KONSTRUKCJA URL ======
 const MAX_PAGES = 3;
@@ -53,7 +66,7 @@ const crawler = new PlaywrightCrawler({
         log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
         return;
       }
-  
+
       await enqueueLinks({
         selector: "div.offers a[href*='/praca/']",
         strategy: "same-domain",
@@ -61,11 +74,12 @@ const crawler = new PlaywrightCrawler({
 
       log(`Listing: strona ${pageNumber}, ofert: ${linksCount}`);
 
-      if (linksCount > 0 && pageNumber < MAX_PAGES) {
+      if (!singlePageMode && linksCount > 0 && pageNumber < MAX_PAGES) {
         const nextPage = pageNumber + 1;
 
         log(`Debounce 5s przed stroną ${pageNumber}...`);
         await sleep(5000);
+
         await crawler.addRequests([{ url: buildUrl(nextPage) }]);
       }
 
@@ -90,4 +104,4 @@ const crawler = new PlaywrightCrawler({
 });
 
 // ====== START ======
-await crawler.run([buildUrl(1)]);
+await crawler.run([buildUrl(startPage)]);
