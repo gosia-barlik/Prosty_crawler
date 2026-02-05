@@ -66,6 +66,44 @@ odczytuje zawartość elementu div#offer-details,
 
 zapisuje pełny HTML tego elementu.
 
+**Plik** : `getHtmlWithParams.js`
+
+Crawler oparty o Crawlee i Playwright
+
+Crawler uruchamiany w kontekście przeglądarki, który pozwala pobierać oferty ze wskazanego archiwum.
+
+Działanie skryptu:
+
+Parametry wejściowe
+
+year – rok archiwum (wymagany)
+month – miesiąc archiwum (wymagany)
+pageNumber – opcjonalny numer strony
+
+jeśli podany → crawler pobiera tylko tę stronę
+
+jeśli nie podany → crawler automatycznie przechodzi przez strony, aż do ustawionego limitu (MAX_PAGES)
+
+Obsługa stron listingowych
+
+wczytuje wskazaną stronę archiwum
+odczytuje wszystkie linki do ofert znajdujące się w div.offers
+dodaje je do kolejki do pobrania
+jeśli działamy w trybie automatycznym (bez podanego pageNumber) → po krótkiej przerwie (debounce, domyślnie 5s) dodaje kolejny numer strony do kolejki, aż do limitu stron (MAX_PAGES)
+
+Obsługa stron ofert
+
+dla każdej podstrony oferty oczekuje na element div#offer-details
+odczytuje pełny HTML tego elementu
+zapisuje HTML do katalogu wyjściowego
+
+Dodatkowe funkcje
+
+licznik stron odwiedzonych i zapisanych ofert w logu (htmlWithParams.log)
+limit równoległości (maxConcurrency) dla bezpieczeństwa pamięci i CPU
+obsługa restartu lub debugowania od dowolnej strony (przez opcjonalny pageNumber)
+debounce między stronami listingowymi, aby nie przeciążać serwera
+
 
 ### 2. Crawler HTML – zapis innerText
 
@@ -114,7 +152,7 @@ npx playwright install
 
 ```bash
 node src/getHtml.js
-node src/getHtmlWithParams.js 2024 2
+node src/getHtmlWithParams.js 2024 2 3 //(ostatni parametr opcjonalny)
 ```
 
 4. Uruchom crawler zapisujący innerText:
