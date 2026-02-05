@@ -114,7 +114,7 @@ npx playwright install
 
 ```bash
 node src/getHtml.js
-node src/getHtmlWithParams.js 2024 2 1
+node src/getHtmlWithParams.js 2024 2
 ```
 
 4. Uruchom crawler zapisujący innerText:
