@@ -3,6 +3,9 @@ node_modules/
 
 # Crawlee storage (requests, datasets, key-value stores)
 storage/
+htmlOutput/
+htmlWithParamsOutput/
+innerTextOutput/
 
 # Playwright
 playwright-report/
@@ -26,6 +29,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Build output (jeśli kiedyś dodasz build)
+# Build output
 dist/
 build/

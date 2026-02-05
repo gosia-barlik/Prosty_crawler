@@ -113,18 +113,19 @@ npx playwright install
 3. Uruchom crawler zapisujący HTML:
 
 ```bash
-node getHtml.js
+node src/getHtml.js
+node src/getHtmlWithParams.js 2024 2 1
 ```
 
 4. Uruchom crawler zapisujący innerText:
 
 ```bash
-node getInnerText.js
+node src/getInnerText.js
 ```
 
 5. Uruchom crawler API:
 ```bash
-node api-test.js
+node src/api-test.js
 ```
 ---
 
