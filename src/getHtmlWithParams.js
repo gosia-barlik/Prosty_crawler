@@ -38,7 +38,7 @@ log(
 );
 
 // ====== KONSTRUKCJA URL ======
-const MAX_PAGES = 3;
+const MAX_PAGES = 500;
 const buildUrl = (pageNumber) =>
   `https://archiwum.pracuj.pl/archive/offers?Year=${year}&Month=${month}&PageNumber=${pageNumber}`;
 const OUTPUT_DIR = "./htmlWithParamsOutput";
@@ -60,12 +60,7 @@ const crawler = new PlaywrightCrawler({
     if (isListingPage) {
       const url = new URL(request.url);
       const pageNumber = Number(url.searchParams.get("PageNumber"));
-      const linksCount = await page.$$eval("div.offers a", (els) => els.length);
-
-      if (pageNumber && pageNumber > MAX_PAGES) {
-        log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
-        return;
-      }
+      const linksCount = await page.$$eval("div.offers a[href*='/praca/']", (els) => els.length);
 
       await enqueueLinks({
         selector: "div.offers a[href*='/praca/']",
@@ -74,6 +69,10 @@ const crawler = new PlaywrightCrawler({
 
       log(`Listing: strona ${pageNumber}, ofert: ${linksCount}`);
 
+      if (!singlePageMode && pageNumber && pageNumber > MAX_PAGES) {
+        log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
+        return;
+      }
       if (!singlePageMode && linksCount > 0 && pageNumber < MAX_PAGES) {
         const nextPage = pageNumber + 1;
 
