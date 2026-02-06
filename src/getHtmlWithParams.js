@@ -81,7 +81,7 @@ const crawler = new PlaywrightCrawler({
         log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
         return;
       }
-      
+
       if (!singlePageMode && linksCount > 0 && pageNumber < MAX_PAGES) {
         const nextPage = pageNumber + 1;
         log(`Debounce 10s przed stroną ${nextPage}...`);
@@ -94,7 +94,7 @@ const crawler = new PlaywrightCrawler({
 
     // ===== STRONA OFERTY =====
     try {
-      await page.waitForSelector("div#offer-details", { timeout: 10000 });
+      await page.waitForSelector("div#offer-details", { timeout: 5000 });
       const html = await page.$eval("div#offer-details", (el) => el.outerHTML);
       const fileName = request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
       fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html, "utf-8");
