@@ -45,23 +45,27 @@ log(
 const MAX_PAGES = 500;
 const buildUrl = (pageNumber) =>
   `https://archiwum.pracuj.pl/archive/offers?Year=${year}&Month=${month}&PageNumber=${pageNumber}`;
-const OUTPUT_DIR = "./htmlWithParamsOutput";
+// katalog zależny od roku i miesiąca
+const OUTPUT_DIR = path.join("htmlWithParamsOutput", String(year), String(month).padStart(2, "0"));
 
 // ====== KATALOG WYJŚCIOWY ======
 if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR);
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
 // ====== CRAWLER ======
 const crawler = new PlaywrightCrawler({
   maxConcurrency: 3,
   useSessionPool: true,
+  requestHandlerTimeoutSecs: 60, //limit czasu obsługi całego requestu
+  navigationTimeoutSecs: 25, //limit czasu ładowania strony
 
   failedRequestHandler({ request, error }) {
     log(`FAILED REQUEST: ${request.url} | ${error.message}`, "ERROR");
   },
 
   async requestHandler({ request, page, enqueueLinks, crawler }) {
+    log(`Aktywne strony: ${crawler.autoscaledPool?.currentConcurrency}`);
     // ===== STRONA LISTINGOWA =====
     const isListingPage = await page.$("div.offers");
 
@@ -76,7 +80,11 @@ const crawler = new PlaywrightCrawler({
       });
 
       log(`Listing: strona ${pageNumber}, ofert: ${linksCount}`);
-
+      // Jeśli brak ofert => kończymy paginację
+      if (!singlePageMode && linksCount === 0) {
+        log(`Koniec paginacji - brak ofert na stronie ${pageNumber}`);
+        return;
+      }
       if (!singlePageMode && pageNumber && pageNumber > MAX_PAGES) {
         log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
         return;
