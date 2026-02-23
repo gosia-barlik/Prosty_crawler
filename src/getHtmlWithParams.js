@@ -27,8 +27,8 @@ if (!year || !month) {
   log(`Użycie: node getHtmlWithParams.js <year> <month> [pageNumber]`);
   process.exit(1);
 }
-const singlePageMode = pageNumber !== undefined;
-const startPage = singlePageMode ? Number(pageNumber) : 1;
+const startPage = pageNumber ? Number(pageNumber) : 1;
+const startFromCustomPage = pageNumber !== undefined;
 
 if (Number.isNaN(startPage) || startPage < 1) {
   log("pageNumber musi być liczbą >= 1");
@@ -36,9 +36,9 @@ if (Number.isNaN(startPage) || startPage < 1) {
 }
 
 log(
-  singlePageMode
-    ? `START crawlera: year=${year}, month=${month}, ONLY page=${startPage}`
-    : `START crawlera: year=${year}, month=${month}, AUTO pages`,
+  startFromCustomPage
+    ? `START crawlera: year=${year}, month=${month}, RESUME od strony ${startPage}`
+    : `START crawlera: year=${year}, month=${month}, START od strony 1`,
 );
 
 // ====== KONSTRUKCJA URL ======
@@ -81,16 +81,16 @@ const crawler = new PlaywrightCrawler({
 
       log(`Listing: strona ${pageNumber}, ofert: ${linksCount}`);
       // Jeśli brak ofert => kończymy paginację
-      if (!singlePageMode && linksCount === 0) {
+      if (linksCount === 0) {
         log(`Koniec paginacji - brak ofert na stronie ${pageNumber}`);
         return;
       }
-      if (!singlePageMode && pageNumber && pageNumber > MAX_PAGES) {
+      if (pageNumber && pageNumber > MAX_PAGES) {
         log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
         return;
       }
 
-      if (!singlePageMode && linksCount > 0 && pageNumber < MAX_PAGES) {
+      if (linksCount > 0 && pageNumber < MAX_PAGES) {
         const nextPage = pageNumber + 1;
         log(`Debounce 10s przed stroną ${nextPage}...`);
         await sleep(10000);
