@@ -1,18 +1,59 @@
-// process.env.CRAWLEE_DISABLE_SYSTEM_INFO = "1";
-
 import { PlaywrightCrawler } from "crawlee";
 import fs from "fs";
 import path from "path";
 
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
+// ====== STAŁE ======
+const MAX_PAGES = 500;
+
+// ====== PARAMETRY Z CLI ======
+const [, , year, month, startPageArg, endPageArg] = process.argv;
+
+if (!year || !month) {
+  console.error(
+    "Użycie: node getHtmlWithParams.js <year> <month> [startPage] [endPage]"
+  );
+  process.exit(1);
+}
+
+const startPage = startPageArg ? Number(startPageArg) : 1;
+const endPage = endPageArg ? Number(endPageArg) : MAX_PAGES;
+
+if (Number.isNaN(startPage) || startPage < 1) {
+  console.error("startPage musi być liczbą >= 1");
+  process.exit(1);
+}
+
+if (Number.isNaN(endPage) || endPage < 1) {
+  console.error("endPage musi być liczbą >= 1");
+  process.exit(1);
+}
+
+if (startPage > endPage) {
+  console.error("startPage nie może być większy niż endPage");
+  process.exit(1);
+}
+
+if (startPage > MAX_PAGES) {
+  console.error(`startPage nie może być większy niż MAX_PAGES=${MAX_PAGES}`);
+  process.exit(1);
+}
+
+if (endPage > MAX_PAGES) {
+  console.error(`endPage nie może być większy niż MAX_PAGES=${MAX_PAGES}`);
+  process.exit(1);
+}
+
 // ====== LOGGER ======
-const LOG_FILE = "./htmlWithParams.log";
+
+const LOG_FILE = `./htmlWithParams_${year}_${String(month).padStart(2, "0")}_p${startPage}-p${endPage}.log`;
 
 function log(message, level = "INFO") {
   const timestamp = new Date().toISOString();
   const line = `[${timestamp}] [${level}] ${message}\n`;
   fs.appendFileSync(LOG_FILE, line, "utf-8");
+
   if (level === "ERROR") {
     console.error(message);
   } else {
@@ -20,35 +61,17 @@ function log(message, level = "INFO") {
   }
 }
 
-// ====== PARAMETRY Z CLI ======
-const [, , year, month, pageNumber] = process.argv;
-log(`START crawlera: year=${year}, month=${month}`);
-if (!year || !month) {
-  log(`Użycie: node getHtmlWithParams.js <year> <month> [pageNumber]`);
-  process.exit(1);
-}
-const startPage = pageNumber ? Number(pageNumber) : 1;
-const startFromCustomPage = pageNumber !== undefined;
-
-if (Number.isNaN(startPage) || startPage < 1) {
-  log("pageNumber musi być liczbą >= 1");
-  process.exit(1);
-}
-
 log(
-  startFromCustomPage
-    ? `START crawlera: year=${year}, month=${month}, RESUME od strony ${startPage}`
-    : `START crawlera: year=${year}, month=${month}, START od strony 1`,
+  `START crawlera: year=${year}, month=${month}, startPage=${startPage}, endPage=${endPage}`
 );
 
 // ====== KONSTRUKCJA URL ======
-const MAX_PAGES = 500;
 const buildUrl = (pageNumber) =>
   `https://archiwum.pracuj.pl/archive/offers?Year=${year}&Month=${month}&PageNumber=${pageNumber}`;
-// katalog zależny od roku i miesiąca
-const OUTPUT_DIR = path.join("htmlWithParamsOutput", String(year), String(month).padStart(2, "0"));
 
 // ====== KATALOG WYJŚCIOWY ======
+const OUTPUT_DIR = `htmlWithParamsOutput_${year}_${String(month).padStart(2, "0")}`;
+
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
@@ -57,8 +80,8 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 const crawler = new PlaywrightCrawler({
   maxConcurrency: 3,
   useSessionPool: true,
-  requestHandlerTimeoutSecs: 60, //limit czasu obsługi całego requestu
-  navigationTimeoutSecs: 25, //limit czasu ładowania strony
+  requestHandlerTimeoutSecs: 60,
+  navigationTimeoutSecs: 25,
 
   failedRequestHandler({ request, error }) {
     log(`FAILED REQUEST: ${request.url} | ${error.message}`, "ERROR");
@@ -66,36 +89,52 @@ const crawler = new PlaywrightCrawler({
 
   async requestHandler({ request, page, enqueueLinks, crawler }) {
     log(`Aktywne strony: ${crawler.autoscaledPool?.currentConcurrency}`);
-    // ===== STRONA LISTINGOWA =====
+
     const isListingPage = await page.$("div.offers");
 
+    // ===== STRONA LISTINGOWA =====
     if (isListingPage) {
       const url = new URL(request.url);
-      const pageNumber = Number(url.searchParams.get("PageNumber"));
-      const linksCount = await page.$$eval("div.offers a[href*='/praca/']", (els) => els.length);
+      const currentPage = Number(url.searchParams.get("PageNumber"));
+
+      if (Number.isNaN(currentPage) || currentPage < 1) {
+        log(`Nieprawidłowy numer strony w URL: ${request.url}`, "ERROR");
+        return;
+      }
+
+      if (currentPage > endPage) {
+        log(`Pominięto stronę ${currentPage} (endPage=${endPage})`);
+        return;
+      }
+
+      const linksCount = await page.$$eval(
+        "div.offers a[href*='/praca/']",
+        (els) => els.length
+      );
+
+      log(`Listing: strona ${currentPage}, ofert: ${linksCount}`);
+
+      if (linksCount === 0) {
+        log(`Koniec paginacji - brak ofert na stronie ${currentPage}`);
+        return;
+      }
 
       await enqueueLinks({
         selector: "div.offers a[href*='/praca/']",
         strategy: "same-domain",
       });
 
-      log(`Listing: strona ${pageNumber}, ofert: ${linksCount}`);
-      // Jeśli brak ofert => kończymy paginację
-      if (linksCount === 0) {
-        log(`Koniec paginacji - brak ofert na stronie ${pageNumber}`);
-        return;
-      }
-      if (pageNumber && pageNumber > MAX_PAGES) {
-        log(`Pominięto stronę ${pageNumber} (MAX_PAGES=${MAX_PAGES})`);
+      if (currentPage >= endPage) {
+        log(
+          `Osiągnięto ostatnią stronę zakresu: ${currentPage}. Nie dodaję kolejnych stron.`
+        );
         return;
       }
 
-      if (linksCount > 0 && pageNumber < MAX_PAGES) {
-        const nextPage = pageNumber + 1;
-        log(`Debounce 10s przed stroną ${nextPage}...`);
-        await sleep(10000);
-        await crawler.addRequests([{ url: buildUrl(nextPage) }]);
-      }
+      const nextPage = currentPage + 1;
+      log(`Debounce 10s przed stroną ${nextPage}...`);
+      await sleep(10000);
+      await crawler.addRequests([{ url: buildUrl(nextPage) }]);
 
       return;
     }
@@ -104,12 +143,16 @@ const crawler = new PlaywrightCrawler({
     try {
       await page.waitForSelector("div#offer-details", { timeout: 5000 });
       const html = await page.$eval("div#offer-details", (el) => el.outerHTML);
-      const fileName = request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
-      fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html, "utf-8");
+      const fileName =
+        request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
 
+      fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html, "utf-8");
       log(`Zapisano ofertę: ${fileName}`);
     } catch (err) {
-      log(`Błąd przy przetwarzaniu oferty ${request.url}: ${err.message}`, "ERROR");
+      log(
+        `Błąd przy przetwarzaniu oferty ${request.url}: ${err.message}`,
+        "ERROR"
+      );
     }
   },
 });
