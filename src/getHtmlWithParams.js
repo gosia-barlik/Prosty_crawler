@@ -11,9 +11,7 @@ const MAX_PAGES = 500;
 const [, , year, month, startPageArg, endPageArg] = process.argv;
 
 if (!year || !month) {
-  console.error(
-    "Użycie: node getHtmlWithParams.js <year> <month> [startPage] [endPage]"
-  );
+  console.error("Użycie: node getHtmlWithParams.js <year> <month> [startPage] [endPage]");
   process.exit(1);
 }
 
@@ -61,9 +59,7 @@ function log(message, level = "INFO") {
   }
 }
 
-log(
-  `START crawlera: year=${year}, month=${month}, startPage=${startPage}, endPage=${endPage}`
-);
+log(`START crawlera: year=${year}, month=${month}, startPage=${startPage}, endPage=${endPage}`);
 
 // ====== KONSTRUKCJA URL ======
 const buildUrl = (pageNumber) =>
@@ -82,6 +78,7 @@ const crawler = new PlaywrightCrawler({
   useSessionPool: true,
   requestHandlerTimeoutSecs: 60,
   navigationTimeoutSecs: 25,
+  maxRequestRetries: 1,
 
   failedRequestHandler({ request, error }) {
     log(`FAILED REQUEST: ${request.url} | ${error.message}`, "ERROR");
@@ -107,10 +104,7 @@ const crawler = new PlaywrightCrawler({
         return;
       }
 
-      const linksCount = await page.$$eval(
-        "div.offers a[href*='/praca/']",
-        (els) => els.length
-      );
+      const linksCount = await page.$$eval("div.offers a[href*='/praca/']", (els) => els.length);
 
       log(`Listing: strona ${currentPage}, ofert: ${linksCount}`);
 
@@ -125,9 +119,7 @@ const crawler = new PlaywrightCrawler({
       });
 
       if (currentPage >= endPage) {
-        log(
-          `Osiągnięto ostatnią stronę zakresu: ${currentPage}. Nie dodaję kolejnych stron.`
-        );
+        log(`Osiągnięto ostatnią stronę zakresu: ${currentPage}. Nie dodaję kolejnych stron.`);
         return;
       }
 
@@ -143,16 +135,12 @@ const crawler = new PlaywrightCrawler({
     try {
       await page.waitForSelector("div#offer-details", { timeout: 5000 });
       const html = await page.$eval("div#offer-details", (el) => el.outerHTML);
-      const fileName =
-        request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
+      const fileName = request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
 
       fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html, "utf-8");
       log(`Zapisano ofertę: ${fileName}`);
     } catch (err) {
-      log(
-        `Błąd przy przetwarzaniu oferty ${request.url}: ${err.message}`,
-        "ERROR"
-      );
+      log(`Błąd przy przetwarzaniu oferty ${request.url}: ${err.message}`, "ERROR");
     }
   },
 });
