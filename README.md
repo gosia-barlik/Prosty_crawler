@@ -70,13 +70,14 @@ Działanie skryptu:
 - Parametry wejściowe:
     year – rok archiwum (wymagany)
     month – miesiąc archiwum (wymagany)
-    **pageNumber – opcjonalny numer strony, jeśli podany → crawler pobiera tylko tę stronę, jeśli nie podany → crawler automatycznie przechodzi przez strony, aż do ustawionego limitu (MAX_PAGES)**
+    **startPage – opcjonalny numer strony, jeśli podany → crawler pobiera tylko tę stronę, jeśli nie podany → crawler automatycznie przechodzi przez strony, aż do ustawionego limitu (MAX_PAGES)**
+    **endPage – opcjonalny numer strony, jeśli podany → crawler pobiera strony z zakresu startPage - endPage, jeśli nie podany → crawler automatycznie przechodzi przez strony, aż do ustawionego limitu (MAX_PAGES)**
 
 - Obsługa stron listingowych
   - wczytuje wskazaną stronę archiwum
   - odczytuje wszystkie linki do ofert znajdujące się w div.offers
   - dodaje je do kolejki do pobrania
-  - jeśli działamy w trybie automatycznym (bez podanego pageNumber) → po krótkiej przerwie (debounce, domyślnie 5s) dodaje kolejny numer strony do kolejki, aż do limitu stron (MAX_PAGES)
+  - jeśli działamy w trybie automatycznym (bez podanego startPage) → po krótkiej przerwie (debounce, domyślnie 5s) dodaje kolejny numer strony do kolejki, aż do limitu stron (MAX_PAGES)
 
 - Obsługa stron ofert
   - dla każdej podstrony oferty oczekuje na element div#offer-details
@@ -86,7 +87,7 @@ Działanie skryptu:
 - Dodatkowe funkcje
   - licznik stron odwiedzonych i zapisanych ofert w logu (htmlWithParams.log)
   - limit równoległości (maxConcurrency) dla bezpieczeństwa pamięci i CPU
-  - obsługa restartu lub debugowania od dowolnej strony (przez opcjonalny pageNumber)
+  - obsługa restartu lub debugowania od dowolnej strony (przez opcjonalny startPage)
   - debounce między stronami listingowymi, aby nie przeciążać serwera
 
 
@@ -131,7 +132,7 @@ npx playwright install
 
 ```bash
 node src/getHtml.js
-node src/getHtmlWithParams.js 2024 2 3 //(ostatni parametr opcjonalny)
+node src/getHtmlWithParams.js 2024 2 3 5 //(year, month, startPage, endPage - ostatnie 2 parametry opcjonalne)
 ```
 
 4. Uruchom crawler zapisujący innerText:
