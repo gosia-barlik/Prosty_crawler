@@ -5,7 +5,7 @@ import path from "path";
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // ====== STAŁE ======
-const MAX_PAGES = 500;
+const MAX_PAGES = 2000;
 
 // ====== PARAMETRY Z CLI ======
 const [, , year, month, startPageArg, endPageArg] = process.argv;
@@ -108,15 +108,14 @@ const crawler = new PlaywrightCrawler({
 
       log(`Listing: strona ${currentPage}, ofert: ${linksCount}`);
 
-      if (linksCount === 0) {
-        log(`Koniec paginacji - brak ofert na stronie ${currentPage}`);
-        return;
+      if (linksCount > 0) {
+        await enqueueLinks({
+          selector: "div.offers a[href*='/praca/']",
+          strategy: "same-domain",
+        });
+      } else {
+        log(`Brak ofert na stronie ${currentPage}. Idę dalej.`);
       }
-
-      await enqueueLinks({
-        selector: "div.offers a[href*='/praca/']",
-        strategy: "same-domain",
-      });
 
       if (currentPage >= endPage) {
         log(`Osiągnięto ostatnią stronę zakresu: ${currentPage}. Nie dodaję kolejnych stron.`);
@@ -134,7 +133,7 @@ const crawler = new PlaywrightCrawler({
     // ===== STRONA OFERTY =====
     try {
       await page.waitForSelector("div#offer-details", { timeout: 5000 });
-      const html = await page.$eval("div#offer-details", (el) => el.outerHTML);
+      const html = await page.content();
       const fileName = request.url.replace(/^https?:\/\//, "").replace(/[^\w]/g, "_") + ".html";
 
       fs.writeFileSync(path.join(OUTPUT_DIR, fileName), html, "utf-8");
@@ -157,3 +156,7 @@ process.on("unhandledRejection", (reason) => {
 
 // ====== START ======
 await crawler.run([buildUrl(startPage)]);
+
+console.log("=== AFTER CRAWLER RUN ===");
+log("Crawler.run() zakończony.");
+process.exit(0);
