@@ -6,6 +6,8 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // ====== STAŁE ======
 const MAX_PAGES = 2000;
+const MAX_EMPTY_PAGES_IN_ROW = 10;
+let emptyPagesInRow = 0;
 
 // ====== PARAMETRY Z CLI ======
 const [, , year, month, startPageArg, endPageArg] = process.argv;
@@ -109,12 +111,27 @@ const crawler = new PlaywrightCrawler({
       log(`Listing: strona ${currentPage}, ofert: ${linksCount}`);
 
       if (linksCount > 0) {
+        emptyPagesInRow = 0;
+
         await enqueueLinks({
           selector: "div.offers a[href*='/praca/']",
           strategy: "same-domain",
         });
       } else {
-        log(`Brak ofert na stronie ${currentPage}. Idę dalej.`);
+        emptyPagesInRow += 1;
+
+        log(
+          `Brak ofert na stronie ${currentPage}. Licznik pustych stron: ` +
+            `${emptyPagesInRow}/${MAX_EMPTY_PAGES_IN_ROW}`,
+        );
+      }
+
+      if (emptyPagesInRow >= MAX_EMPTY_PAGES_IN_ROW) {
+        log(
+          `Koniec paginacji - osiągnięto ${MAX_EMPTY_PAGES_IN_ROW} pustych stron z rzędu. ` +
+            `Ostatnia sprawdzona strona: ${currentPage}`,
+        );
+        return;
       }
 
       if (currentPage >= endPage) {
