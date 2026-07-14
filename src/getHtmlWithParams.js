@@ -12,7 +12,7 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 const MAX_PAGES = 2000;
 const MAX_EMPTY_PAGES_IN_ROW = 10;
 
-// Selektor prowadzący do ofert pracy. W obecnej wersji nie ma już div.offers, dlatego wyszukujemy bezpośrednio linki zawierające '/praca/
+// Selektor prowadzący do ofert pracy. W obecnej wersji nie ma już div.offers, dlatego wyszukujemy linki zawierające '/praca/'
 const OFFER_LINK_SELECTOR = 'a[href*="/praca/"][href*=",oferta,"]';
 
 let emptyPagesInRow = 0;
@@ -120,7 +120,7 @@ const crawler = new PlaywrightCrawler({
   // Maksymalna liczba jednocześnie otwartych stron.
   maxConcurrency: 3,
 
-  // Włączenie puli sesji (obsługa ciasteczek itp.).
+  // Włączenie zarządzanie sesjami użytkownika (Crawlee może rotować sesje, np. gdy dana sesja zostanie zablokowana).
   useSessionPool: true,
 
   // Maksymalny czas obsługi jednego requestu.
@@ -145,7 +145,7 @@ const crawler = new PlaywrightCrawler({
     log(`REQUEST: ${request.url}`);
     log(`Aktywne strony: ${crawler.autoscaledPool?.currentConcurrency}`);
 
-    // Sprawdzenie czy znajdujemy się na stronie listingu
+    // Sprawdzenie, czy znajdujemy się na stronie listingu
     const requestUrl = new URL(request.url);
 
     // Listing rozpoznajemy po domenie archiwum, a nie po klasie HTML.

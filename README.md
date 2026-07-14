@@ -97,7 +97,7 @@ Pobiera strony od 10 do 300 włącznie.
 
 Dla każdej strony archiwum crawler:
   - wczytuje stronę listingu ofert,
-  - odczytuje wszystkie linki do ofert znajdujące się w div.offers
+  - odczytuje wszystkie linki do ofert zawierające '/praca/'
   - dodaje je do kolejki do pobrania
   - po krótkiej przerwie (debounce, domyślnie 10 s) dodaje do kolejki następną stronę listingu.
 

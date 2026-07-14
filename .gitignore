@@ -5,6 +5,7 @@ node_modules/
 storage/
 htmlOutput/
 htmlWithParamsOutput/
+htmlWithParamsOutput_*/
 innerTextOutput/
 
 # Playwright
@@ -13,6 +14,7 @@ test-results/
 
 # Logs
 *.log
+htmlWithParams_*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
